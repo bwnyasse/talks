@@ -4,7 +4,7 @@
 version: '2'
 
 services:
-   db:
+   jdownloader2:
      image: aptalca/docker-jdownloader2
      restart: always
      environment:
