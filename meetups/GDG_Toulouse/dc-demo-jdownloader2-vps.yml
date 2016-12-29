@@ -1,0 +1,14 @@
+## Quickstart: Compose and Jdownloader2
+# Example from https://hub.docker.com/r/aptalca/docker-jdownloader2/
+#######################################################################
+version: '2'
+
+services:
+   db:
+     image: aptalca/docker-jdownloader2
+     restart: always
+     environment:
+       HEIGHT: 720
+       WIDTH: 1280
+     ports:
+       - "8090:8080"
