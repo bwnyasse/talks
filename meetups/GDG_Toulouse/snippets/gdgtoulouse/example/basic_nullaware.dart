@@ -2,6 +2,8 @@
 // Created on : 05/01/17
 // Author     : bwnyasse
 
+// Snippet Code @bwnyasse :  Dart Meetup - GDG Toulouse
+
 class Element {
 
   var type;
@@ -19,9 +21,8 @@ main() {
   Element el;
 
   el?.type; // if ( el != null ) el.type
-  el?.someMethod(); // if ( el != someMethod() ) el.someMethod()
+  el?.someMethod(); // if ( el != null ) el.someMethod()
 
-  Element elNotNull = new Element.withType("GDG meetup");
-  el ??= elNotNull; // if ( el == null ) el = elNotNull;
+  el ??= new Element.withType("GDG meetup");; // if ( el == null ) ...
 
 }

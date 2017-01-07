@@ -2,15 +2,14 @@
 // Created on : 05/01/17
 // Author     : bwnyasse
 
+// Snippet Code @bwnyasse :  Dart Meetup - GDG Toulouse
 
 import 'dart:html';
 
-// Imagine that this function is more complex and slow. :)
-gatherNewsReportsIsSlow() {
+final PATH = 'https://www.dartlang.org/f/dailyNewsDigest.txt';
 
-  String path = 'https://www.dartlang.org/f/dailyNewsDigest.txt';
-  return HttpRequest.getString(path);
-}
+// Imagine that this function is more complex and slow. :)
+gatherNewsReportsIsSlow() => HttpRequest.getString(PATH);
 
 // Using Pure Future API ...
 printDailyNewsDigestInAsync() {
@@ -19,6 +18,4 @@ printDailyNewsDigestInAsync() {
   future.then((content) => print(content));
 }
 
-main() {
-  printDailyNewsDigestInAsync();
-}
+main() => printDailyNewsDigestInAsync();

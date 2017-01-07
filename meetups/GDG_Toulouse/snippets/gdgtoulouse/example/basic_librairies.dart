@@ -2,6 +2,8 @@
 // Created on : 05/01/17
 // Author     : bwnyasse
 
+// Snippet Code @bwnyasse :  Dart Meetup - GDG Toulouse
+
 import 'dart:html';
 import 'package:gdgtoulouse/lib1.dart';
 import 'package:gdgtoulouse/lib2.dart' as lib2;

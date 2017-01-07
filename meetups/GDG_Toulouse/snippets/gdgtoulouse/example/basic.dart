@@ -2,6 +2,7 @@
 // Created on : 05/01/17
 // Author     : bwnyasse
 
+// Snippet Code @bwnyasse :  Dart Meetup - GDG Toulouse
 
 // Define a function.
 whatIsYourFavoriteMeetup(name, creationD) =>

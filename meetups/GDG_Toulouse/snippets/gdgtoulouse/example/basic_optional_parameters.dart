@@ -2,11 +2,14 @@
 // Created on : 05/01/17
 // Author     : bwnyasse
 
+// Snippet Code @bwnyasse :  Dart Meetup - GDG Toulouse
+
 // Define a function : optional named parameters
 whatIsYourFavoriteMeetup({name, creationD}) {
+
   String res = "$name is my fav meetup";
 
-  // '== null' is familiar to developers
+  // '== null' should be used - it is familiar to developers
   creationD is Null ? print(res) : print(res + "created the $creationD.");
 }
 

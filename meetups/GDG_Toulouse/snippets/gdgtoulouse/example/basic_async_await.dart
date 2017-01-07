@@ -2,15 +2,14 @@
 // Created on : 05/01/17
 // Author     : bwnyasse
 
+// Snippet Code @bwnyasse :  Dart Meetup - GDG Toulouse
 
 import 'dart:html';
 
-// Imagine that this function is more complex and slow. :)
-gatherNewsReportsIsSlow() async {
+final PATH = 'https://www.dartlang.org/f/dailyNewsDigest.txt';
 
-  String path = 'https://www.dartlang.org/f/dailyNewsDigest.txt';
-  return await HttpRequest.getString(path);
-}
+// Imagine that this function is more complex and slow. :)
+gatherNewsReportsIsSlow() async => await HttpRequest.getString(PATH);
 
 printDailyNewsDigestInAsync() async {
 
@@ -22,6 +21,5 @@ printDailyNewsDigestInAsync() async {
   }
 }
 
-main() {
-  printDailyNewsDigestInAsync();
-}
+main() => printDailyNewsDigestInAsync();
+
