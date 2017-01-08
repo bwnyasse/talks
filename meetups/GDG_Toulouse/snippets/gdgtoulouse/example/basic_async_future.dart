@@ -19,3 +19,4 @@ printDailyNewsDigestInAsync() {
 }
 
 main() => printDailyNewsDigestInAsync();
+
