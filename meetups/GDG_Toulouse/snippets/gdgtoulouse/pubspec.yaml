@@ -2,13 +2,13 @@ name: gdgtoulouse
 description: Snippets Collection displayed during the meetup.
 version: 0.0.1
 author: bwnyasse <boris@bwnyasse.net>
-homepage: https://www.example.com
 
 environment:
-  sdk: '>=1.0.0 <2.0.0'
+  sdk: '>= 1.13.0 <2.0.0'
 
 dependencies:
   observable: any
+  js: any # This packages requires Dart SDK 1.13.0.
 
 dev_dependencies:
   test: '>=0.12.0 <0.13.0'
