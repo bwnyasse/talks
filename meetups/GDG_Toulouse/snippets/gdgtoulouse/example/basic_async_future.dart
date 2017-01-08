@@ -15,7 +15,7 @@ gatherNewsReportsIsSlow() => HttpRequest.getString(PATH);
 printDailyNewsDigestInAsync() {
 
   var future = gatherNewsReportsIsSlow();
-  future.then((content) => print(content));
+  future.then((news) => print(news));
 }
 
 main() => printDailyNewsDigestInAsync();

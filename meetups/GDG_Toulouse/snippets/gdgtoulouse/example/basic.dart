@@ -21,12 +21,3 @@ main() {
   whatIsYourFavoriteMeetup(meetupName, cDate);
 
 }
-
-import 'package:angular2/core.dart';
-
-@Component(
-    selector: 'my-fav-meetup',
-    template: '<h1>My Fav Meetup is {{name}}</h1>')
-class FavMeetupComponent {
-  var name = 'GDG Toulouse';
-}
