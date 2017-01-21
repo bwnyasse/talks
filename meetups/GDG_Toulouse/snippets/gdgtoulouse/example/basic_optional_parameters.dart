@@ -4,21 +4,17 @@
 
 // Snippet Code @bwnyasse :  Dart Meetup - GDG Toulouse
 
+
 // Define a function : optional named parameters
-whatIsYourFavoriteMeetup({name, creationD}) {
+whereIsYourFavoriteMeetup({name, where : 'AtHome'})
 
-  String res = "$name is my fav meetup";
+    => print("$name is my fav meetup at $where" );
 
-  // '== null' should be used - it is familiar to developers
-  creationD is Null ? print(res) : print(res + "created the $creationD.");
-}
 
 // Top-level required function
 main() {
   String meetupName = "GDG Toulouse";
 
-  // Without specifying the type
-  var cDate = new DateTime(2012, DateTime.DECEMBER, 9);
-
-  whatIsYourFavoriteMeetup(name: meetupName);
+  whereIsYourFavoriteMeetup(name: meetupName);
 }
+
